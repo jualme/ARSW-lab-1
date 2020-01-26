@@ -9,4 +9,5 @@
   - Start all three threads with start(). 
   - Run and check the output on screen. 
   - Change the beginning with start() to run(). How does the output change? Why?
+  
 	_With the start () method, the output is not consecutive, because the threads do not have a defined execution order, instead with the run () method the threads are executed sequentially showing the intervals in the given order on the screen._
