@@ -6,6 +6,6 @@
 
 ## Solución
 
-> [BBP Formula](BBP%20Formula)
+> (BBP Formula)[BBP Formula]
 
-> [Dogs Race case](Dogs%20Race%20case)
+> (Dogs Race case)[Dogs Race case]
