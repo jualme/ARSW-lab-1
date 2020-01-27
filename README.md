@@ -1,11 +1,10 @@
 # ARSW-lab-1
 
-## Integrantes 
-- **Juan Alberto Mejía**
+## Members 
+- **Juan Alberto Mejía Schuster**
 - **Johann Sebastian Páez Campos**
 
-## Solución
+## Answers
 
 > [BBP Formula](BBP%20Formula)
-
 > [Dogs Race case](Dogs%20Race%20case)
