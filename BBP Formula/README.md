@@ -1,15 +1,32 @@
 # ARSW-lab-1
 
+### Comands to run it
+
+``` mvn -U package ```
+
+``` mvn exec:java -Dexec.mainClass="edu.eci.arsw.Main```
+
+or to manually imput the number of threads and range 
+
+``` mvn exec:java -Dexec.mainClass="edu.eci.arsw.PiDigits```
 
 ## Part I - Introduction to Java Threads
 1. As reviewed in the readings, complete the CountThread classes, so that they define the life cycle of a thread that prints the numbers between A and B. 
+
+![](https://github.com/jualme/ARSW-lab-1/blob/master/BBP%20Formula/img/CountThread.png)
 
 2. Complete the main method of the CountMainThreads class so that:
   - Create 3 threads of type CountThread, assigning the first one the interval [0..99], the second one [99..199], and the third one [200..299]. 
   - Start all three threads with start(). 
   - Run and check the output on screen. 
+  
+  ![](https://github.com/jualme/ARSW-lab-1/blob/master/BBP%20Formula/img/CountThreadsMain.png)
+  
   - Change the beginning with start() to run(). How does the output change? Why?
+  
 	_With the start () method, the output is not consecutive, because the threads do not have a defined execution order, instead with the run () method the threads are executed sequentially showing the intervals in the given order on the screen._
+	
+	
 
 ## Part II - BBP Formula Exercise
 
@@ -39,8 +56,35 @@ From the above, implement the following sequence of experiments to calculate the
 
 When starting the program, run the jVisualVM monitor, and as the tests run, check and record the CPU and memory consumption in each case.
 
+### First case
 
-_to do Imagenes_
+Single thread
+
+![](https://github.com/jualme/ARSW-lab-1/blob/master/BBP%20Formula/img/1Thread.PNG)
+
+### Second case
+
+6 threads 
+
+![](https://github.com/jualme/ARSW-lab-1/blob/master/BBP%20Formula/img/6Threads.PNG)
+
+### Third case
+
+12 threads 
+
+![](https://github.com/jualme/ARSW-lab-1/blob/master/BBP%20Formula/img/12threads.PNG)
+
+### Fourth case
+
+200 threads 
+
+![](https://github.com/jualme/ARSW-lab-1/blob/master/BBP%20Formula/img/200threads.PNG)
+
+### Fifth case
+
+500 threads 
+
+![](https://github.com/jualme/ARSW-lab-1/blob/master/BBP%20Formula/img/500threads.PNG)
 
 
 With the above, and with the execution times given, graph solution time vs. Number of threads. Analyze and propose hypotheses with your partner for the following questions (you can take into account what is reported by jVisualVM):
@@ -48,3 +92,7 @@ With the above, and with the execution times given, graph solution time vs. Numb
    1. According to Amdahls law, where S (n) is the theoretical performance improvement, P the parallel fraction of the algorithm, and n the number of threads, the greater n, the greater the improvement should be. Why is the best performance not achieved with the 500 threads? How does this performance compare when 200 are used?.
    2. How does the solution behave using as many processing threads as cores compared to the result of using twice as much?
    3. According to the above, if for this problem instead of 500 threads on a single CPU, 1 wire could be used on each of 500 hypothetical machines, would Amdahls's law be better applied? If, instead, c threads were used in 500 / c distributed machines (where c is the number of cores of said machines), would it be improved? Explain your answer.
+
+<p align="center">
+  <img width="190" height="66" src="https://github.com/jualme/ARSW-lab-1/blob/master/BBP%20Formula/img/ahmdahls.png">
+</p>
