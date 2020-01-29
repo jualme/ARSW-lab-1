@@ -4,7 +4,7 @@
 
 ``` mvn -U package ```
 
-``` mvn exec:java -Dexec.mainClass="edu.eci.arsw.Main```
+``` mvn exec:java -Dexec.mainClass="edu.eci.arsw.Main"```
 
 or to manually imput the number of threads and range 
 
