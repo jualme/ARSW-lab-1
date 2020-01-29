@@ -89,9 +89,17 @@ Single thread
 
 With the above, and with the execution times given, graph solution time vs. Number of threads. Analyze and propose hypotheses with your partner for the following questions (you can take into account what is reported by jVisualVM):
 
+![](https://github.com/jualme/ARSW-lab-1/blob/master/BBP%20Formula/img/graph.PNG)
+
    1. According to Amdahls law, where S (n) is the theoretical performance improvement, P the parallel fraction of the algorithm, and n the number of threads, the greater n, the greater the improvement should be. Why is the best performance not achieved with the 500 threads? How does this performance compare when 200 are used?.
+   
+Amdahl's law is theoretical and it doesn't have into account the time required for the processor to change between threads, that's why the real-time for n = 500 is not better than n = 200
+   
    2. How does the solution behave using as many processing threads as cores compared to the result of using twice as much?
    3. According to the above, if for this problem instead of 500 threads on a single CPU, 1 wire could be used on each of 500 hypothetical machines, would Amdahls's law be better applied? If, instead, c threads were used in 500 / c distributed machines (where c is the number of cores of said machines), would it be improved? Explain your answer.
+   
+   Yes, it would be better applied, separating the machines and the threads, with that we avoid the time to change between the threads.
+   In the second case dividing 500/c will improve the time but not as much as using a single CPU for each one of the 500 because we need to count the time to change between the threads().
 
 <p align="center">
   <img width="190" height="66" src="https://github.com/jualme/ARSW-lab-1/blob/master/BBP%20Formula/img/ahmdahls.png">
