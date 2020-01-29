@@ -4,9 +4,10 @@
 
 ``` mvn -U package ```
 
-``` mvn exec:java -Dexec.mainClass="edu.eci.arsw.Main"```
+Execute the main function and then interrupt with ctrl + c.
+``` mvn exec:java -Dexec.mainClass="edu.eci.arsw.math.Main""```
 
-or to manually imput the number of threads and range 
+To calculate the time, manually enter the number of threads and the range.
 
 ``` mvn exec:java -Dexec.mainClass="edu.eci.arsw.PiDigits```
 
