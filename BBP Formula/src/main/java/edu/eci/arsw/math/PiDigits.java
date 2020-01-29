@@ -167,7 +167,16 @@ public class PiDigits {
 			int start = scan.nextInt();
 			System.out.println("Longitud: ");
 			int longi = scan.nextInt();
+			// Mira el momento en el que se ejecuta el proceso
+			long inicio = System.currentTimeMillis();
 			PiDigits.getDigits(start, longi, threads);
+			// Mira el momento en el que se termina el proceso
+			long fin = System.currentTimeMillis();
+			// Calcula el tiempo de ejecución de ese proceso
+			double tiempo = (double) ((fin - inicio)/1000);
+			System.out.println("El tiempo de ejecución de los " + threads + " hilos fue de " + tiempo + " segundos.");
+			
+			
 		}
 	}
 

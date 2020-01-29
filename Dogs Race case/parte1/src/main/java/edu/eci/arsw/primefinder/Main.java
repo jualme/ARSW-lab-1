@@ -20,6 +20,7 @@ public class Main {
 		pft2.detener();
 		pft3.detener();
 		
+		System.out.println("Presione una tecla para continuar: ");
 		Scanner scanner = new Scanner(System.in);
 		// Leer el salto de linea
 		String leer = scanner.nextLine();
