@@ -8,7 +8,7 @@ Execute the main function and then interrupt with ctrl + c.
 
 ``` mvn exec:java -Dexec.mainClass="edu.eci.arsw.math.Main""```
 
-Or manually enter the number of threads and the range.
+To calculate the time, manually enter the number of threads and the range.
 
 ``` mvn exec:java -Dexec.mainClass="edu.eci.arsw.PiDigits```
 
