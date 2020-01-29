@@ -5,11 +5,18 @@
 ``` mvn -U package ```
 
 Execute the main function and then interrupt with ctrl + c.
+
 ``` mvn exec:java -Dexec.mainClass="edu.eci.arsw.math.Main""```
 
-To calculate the time, manually enter the number of threads and the range.
+Or manually enter the number of threads and the range.
 
 ``` mvn exec:java -Dexec.mainClass="edu.eci.arsw.PiDigits```
+
+Run tests
+
+``` mvn test```
+
+
 
 ## Part I - Introduction to Java Threads
 1. As reviewed in the readings, complete the CountThread classes, so that they define the life cycle of a thread that prints the numbers between A and B. 
